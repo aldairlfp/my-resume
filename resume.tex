@@ -1,0 +1,186 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Configuration
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% Themes: Awesome-CV
+\documentclass[]{awesome-cv}
+\usepackage{textcomp}
+%%% Override a directory location for fonts(default: 'fonts/')
+\fontdir[fonts/]
+
+%%% Configure a directory location for sections
+\newcommand*{\sectiondir}{resume/}
+
+%%% Override color
+% Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
+%                 awesome-nephritis, awesome-concrete, awesome-darknight
+%% Color for highlight
+% Define your custom color if you don't like awesome colors
+\colorlet{awesome}{awesome-red}
+%\definecolor{awesome}{HTML}{CA63A8}
+%% Colors for text
+%\definecolor{darktext}{HTML}{414141}
+%\definecolor{text}{HTML}{414141}
+%\definecolor{graytext}{HTML}{414141}
+%\definecolor{lighttext}{HTML}{414141}
+
+%%% Override a separator for social informations in header(default: ' | ')
+%\headersocialsep[\quad\textbar\quad]
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Profile
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{center}
+	\headerfirstnamestyle{Aldair} \headerlastnamestyle{Alfonso} \\
+	\vspace{2mm}
+	{\hspace{0.8cm}\faEnvelope\ aldairalfonsoperez@gmail.com}  |  {\faMobile\ (+53) 58123551}  |  {\faMapMarker\ Bilbao, Spain}
+	\newline {\faLink\ \href{https://www.linkedin.com/in/aldair-alfonso-722b5421a/}{https://www.linkedin.com/in/aldair-alfonso-722b5421a/}}
+\end{center}
+
+\cvsection{Skills}
+\begin{cventries}
+	\cventry
+	{}
+	{\def\arraystretch{1.15}{\begin{tabular}{ l l }
+				Languages:                            & {\skill{ C\#, Python, C, C++, SQL, JavaScript.}}                                  \\
+				Frameworks:                           & {\skill{ .Net, ASP.NET, Django, FastAPI.}}                                        \\
+				Databases:                            & {\skill{ MySQL, PostgreSQL, SQLite.}}                                             \\
+				Technologies / Tools: \hspace{0.05cm} & {\skill{ Docker, npm, Git.}}                                                      \\
+				Practices:                            & {\skill{ Agile, Scrum, SOLID Principles, Test-Driven Development, Code Reviews.}} \\
+			\end{tabular}}}
+	{}
+	{}
+	{}
+\end{cventries}
+\vspace{-7mm}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Experience
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\cvsection{Experience}
+\begin{cventries}
+	\cventry
+	{Software Engineer}
+	{Knales}
+	{Havana, Cuba}
+	{10/2022 – 11/2022}
+	{\begin{cvitems}
+			\vspace{0.5mm}
+			\item {Developed a Telegram bot using .NET to streamline access to consulting information, reducing retrieval time for employees and clients.}
+		\end{cvitems}}
+
+	\cventry
+	{Software Engineer}
+	{Avangenio}
+	{Miami, USA}
+	{10/2024 – 07/2025}
+	{\begin{cvitems}
+			\vspace{0.5mm}
+			\item {Develop New API Endpoints – Implement additional RESTful API endpoints in .NET to extend functionality, ensuring they follow best practices in performance, security, and scalability.}
+			\item {Enhance Database Schema – Optimize and expand the database by adding new tables or modifying existing structures to improve data organization and retrieval efficiency.}
+			\item {Improve Data Visualization – Design and integrate new charts, graphs, or dashboards to enhance the visualization of API data, providing better insights for stakeholders.}
+		\end{cvitems}}
+\end{cventries}
+
+\cvsection{Projects}
+\begin{cventries}
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Bruce \vspace{-5mm}}
+	{Python \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+			\item {Developed Bruce, a high-performance compiler for the Hulk Language, featuring an automata-based lexer for efficient
+			            tokenization, an LL(1) parser generator utilizing a custom Grammar class for deterministic syntax analysis, and a robust
+			            semantic analysis module to enforce language constraints and detect errors, ensuring reliable and efficient code
+			            compilation
+			            \newline \faLink\ \href{https://github.com/aldairlfp/bruce}{https://github.com/aldairlfp/bruce}}
+		\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Manage Site \vspace{-5mm}}
+	{Python \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+			\item{Developed a RESTful API with Django to manage organization members, salaries, and fee payments, featuring an
+			            optimized database schema and caching for fast data retrieval. Integrated automated fee calculation and payment
+			            tracking for accuracy and transparency. Designed a scalable architecture using Django REST Framework and best practices, ensuring modularity and future extensibility.}
+		\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Awars \vspace{-5mm}}
+	{Python \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+			\item{Awars is a simulator of battle modes, where the units (agents) involved face each other to be victorious over the enemy
+with the conditions that the confrontation presents. It also has a Domain-Specific Language to control everything.
+			            \newline \faLink\ \href{https://github.com/aldairlfp/Awars}{https://github.com/aldairlfp/Awars}}
+		\end{cvsectionnormaltext}}
+
+	\vspace{-3mm}
+	\cventry
+	{}
+	{Information Retrieval System \vspace{-5mm}}
+	{Python \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+			\item{The objective of this work is to carry out an information retrieval system that allows users to perform searches in a set
+of documents, and obtain as a result a list of documents ordered by relevance.
+			            \newline \faLink\ \href{https://github.com/aldairlfp/SRI}{https://github.com/aldairlfp/SRI}}
+		\end{cvsectionnormaltext}}
+	
+	\vspace{-3mm}
+	\cventry
+	{}
+	{DTorrent \vspace{-5mm}}
+	{Python \vspace{-5mm}}
+	{}
+	{\begin{cvsectionnormaltext}
+			\item{Torrent client and a distributed tracker, implementing peer-to-peer file sharing and decentralized metadata exchange.
+Ensuring efficient file distribution, scalability, and fault tolerance, replicating the core functionalities of traditional
+torrent clients and trackers.
+			            \newline \faLink\ \href{https://github.com/aldairlfp/DTorrent}{https://github.com/aldairlfp/DTorrent}}
+		\end{cvsectionnormaltext}}
+
+	\vspace{-5mm}
+
+\end{cventries}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Education
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{8mm}
+\cvsection{Education}
+\begin{cventries}
+	\vspace{-3mm}
+	\cventry
+	{}
+	{University of Havana \vspace{-5mm}}
+	{Havana, Cuba \vspace{-5mm}}
+	{09/2018 – 03/2025 \vspace{-5mm}}
+	{\begin{cvsectionnormaltext}
+			\item{BSc in Computer Science (7.8/10)}
+		\end{cvsectionnormaltext}}
+\end{cventries}
+
+\end{document}

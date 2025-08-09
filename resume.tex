@@ -46,12 +46,19 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     Profile
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Use a single source of truth for colors
+\definecolor{awesome}{HTML}{E53935}   % a strong red, you can swap it later
+
+% Header
 \begin{center}
-	\headerfirstnamestyle{Aldair} \headerlastnamestyle{Alfonso} \\
-	\vspace{2mm}
-	{\hspace{0.8cm}\faEnvelope\ aldairalfonsoperez@gmail.com}  |  {\faMobile\ (+53) 58123551}  |  {\faMapMarker\ Havana, Cuba}
-	\newline {\faLink\ \href{https://www.linkedin.com/in/aldair-alfonso-722b5421a/}{https://www.linkedin.com/in/aldair-alfonso-722b5421a/}}
+  \headerfirstnamestyle{Aldair}\headerlastnamestyle{Alfonso}\\
+  \vspace{2mm}
+  {\faEnvelope\ \texttt{aldairalfonsoperez@gmail.com} |
+   \faMobile\ (+53) 58123551 |
+   \faMapMarker\ Havana, Cuba}\\
+  \faLink\ \href{https://www.linkedin.com/in/aldair-alfonso-722b5421a/}{LinkedIn}
 \end{center}
+
 
 \cvsection{Skills}
 \begin{cventries}
@@ -74,41 +81,39 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \cvsection{Experience}
 \begin{cventries}
-	\cventry
-	{Data Engineer}
-	{Avangenio}
-	{Miami, USA}
-	{10/2024 – 07/2025}
-	{\begin{cvitems}
-			\vspace{0.5mm}
-			\item {Implemented optimized data processing pipelines using Python and pandas, reducing data transformation time by 40\% through efficient algorithm design and vectorized operations.}
-			\item {Redesigned database schema architecture and optimized query performance with SQL and Python ORM, achieving 60\% faster data retrieval for critical business operations.}
-			\item {Built automated data validation systems using Python that reduced data quality issues by 85\%, implementing comprehensive error handling and logging mechanisms for better system reliability.}
-			\item {Developed real-time data visualization dashboards using Python frameworks (Dash/Plotly), enabling stakeholders to make data-driven decisions 50\% faster than previous manual reporting methods.}
-		\end{cvitems}}
+  \cventry
+    {Data Engineer}
+    {Avangenio}
+    {Miami, USA}
+    {Oct 2024 - Aug 2025}
+    {\begin{cvitems}
+        \item Reduced data transformation time by 40 \% through vectorized Python pipelines.
+        \item Accelerated data retrieval 60 \% by redesigning schema and optimizing SQL/ORM.
+        \item Cut data$-$quality incidents 85 \% with automated Python validation and logging.
+        \item Built real-time Dash/Plotly dashboards, cutting reporting time by 50 \%.
+        \item Created custom Grafana React panels for interactive monitoring.
+      \end{cvitems}}
 
-	\cventry
-	{Freelance Web Developer}
-	{Self-employed}
-	{Remote}
-	{12/2022 – 09/2024}
-	{\begin{cvitems}
-			\vspace{0.5mm}
-			\item {Designed and developed e-commerce solutions using Django and MySQL for small businesses, implementing responsive interfaces, secure payment gateways, and optimized database schemas that improved transaction processing time by 35\%.}
-			\item {Built custom content management systems with ASP.NET and Angular, providing clients with intuitive dashboards for content updates and analytics tracking with real-time data visualization.}
-			\item {Created RESTful API services with Django REST framework and GraphQL endpoints that enabled seamless integration between web applications and mobile apps, reducing API response time by 50\%.}
-			\item {Implemented Redis caching solutions to optimize high-traffic web applications, reducing server load by 40\% and improving page load times across multiple client projects.}
-		\end{cvitems}}
+  \cventry
+    {Freelance Web Developer}
+    {Self-employed}
+    {Remote}
+    {Dec 2022 - Sep 2024}
+    {\begin{cvitems}
+        \item Delivered e-commerce sites in Django/MySQL, speeding transactions 35 \%.
+        \item Built ASP.NET/Angular CMS dashboards with real-time analytics.
+        \item Developed REST/GraphQL APIs, halving response time by 50 \%.
+        \item Deployed Redis cache, lowering server load 40 \% and improving page speed.
+      \end{cvitems}}
 
-	\cventry
-	{Software Engineer}
-	{Knales}
-	{Havana, Cuba}
-	{10/2022 – 11/2022}
-	{\begin{cvitems}
-			\vspace{0.5mm}
-			\item {Built a Telegram bot using .NET/C\# with automated message processing, reducing manual customer response time by 70\% and handling 500+ daily user interactions through efficient event-driven architecture.}
-		\end{cvitems}}
+  \cventry
+    {Software Engineer}
+    {Knales}
+    {Havana, Cuba}
+    {Oct 2022 - Nov 2022}
+    {\begin{cvitems}
+        \item Developed a .NET/C\# Telegram bot that handled 500+ interactions/day, cutting manual response time 70 \%.
+      \end{cvitems}}
 \end{cventries}
 
 \cvsection{Projects}
@@ -120,11 +125,8 @@
 	{Python \vspace{-5mm}}
 	{}
 	{\begin{cvsectionnormaltext}
-			\item {Developed Bruce, a high-performance compiler for the Hulk Language, featuring an automata-based lexer for efficient
-			            tokenization, an LL(1) parser generator utilizing a custom Grammar class for deterministic syntax analysis, and a robust
-			            semantic analysis module to enforce language constraints and detect errors, ensuring reliable and efficient code
-			            compilation
-			            \newline \faLink\ \href{https://github.com/aldairlfp/bruce}{https://github.com/aldairlfp/bruce}}
+			\item {Compiler for Hulk language: automata lexer, LL(1) parser, semantic analysis. \faLink\ \href{https://github.com/aldairlfp/bruce}{github.com/aldairlfp/bruce}
+      }
 		\end{cvsectionnormaltext}}
 
 	\vspace{-3mm}
@@ -134,9 +136,8 @@
 	{Python, Django \vspace{-5mm}}
 	{}
 	{\begin{cvsectionnormaltext}
-			\item{Developed a RESTful API with Django to manage organization members, salaries, and fee payments, featuring an
-			            optimized database schema and caching for fast data retrieval. Skills in API design and real-time data management
-			            directly applicable to multiplayer game backend systems and player data synchronization.}
+			\item{REST API for member/salary/fee management; schema \& cache optimizations. \faLink\ \href{https://github.com/aldairlfp}{repo}
+      }
 		\end{cvsectionnormaltext}}
 
 	\vspace{-3mm}
@@ -146,9 +147,8 @@
 	{Python \vspace{-5mm}}
 	{}
 	{\begin{cvsectionnormaltext}
-			\item{Awars is a battle simulation system where units (agents) engage in combat scenarios. Features a Domain-Specific Language
-			            for game logic control, demonstrating experience with combat mechanics and game rule implementation relevant to 1v1 combat systems.
-			            \newline \faLink\ \href{https://github.com/aldairlfp/Awars}{https://github.com/aldairlfp/Awars}}
+			\item{Battle‑simulation system with a DSL for game logic. \faLink\ \href{https://github.com/aldairlfp/Awars}{github.com/aldairlfp/Awars}
+      }
 		\end{cvsectionnormaltext}}
 
 	\vspace{-3mm}
@@ -158,9 +158,8 @@
 	{Python \vspace{-5mm}}
 	{}
 	{\begin{cvsectionnormaltext}
-			\item{The objective of this work is to carry out an information retrieval system that allows users to perform searches in a set
-			            of documents, and obtain as a result a list of documents ordered by relevance.
-			            \newline \faLink\ \href{https://github.com/aldairlfp/SRI}{https://github.com/aldairlfp/SRI}}
+			\item{Battle-simulation system with a DSL for game logic. \faLink\ \href{https://github.com/aldairlfp/Awars}{github.com/aldairlfp/Awars}
+      }
 		\end{cvsectionnormaltext}}
 
 	\vspace{-3mm}
@@ -170,10 +169,8 @@
 	{Python \vspace{-5mm}}
 	{}
 	{\begin{cvsectionnormaltext}
-			\item{Torrent client and a distributed tracker, implementing peer-to-peer file sharing and decentralized metadata exchange.
-			            Ensuring efficient file distribution, scalability, and fault tolerance, replicating the core functionalities of traditional
-			            torrent clients and trackers.
-			            \newline \faLink\ \href{https://github.com/aldairlfp/DTorrent}{https://github.com/aldairlfp/DTorrent}}
+			\item{ IR system that ranks documents by relevance. \faLink\ \href{https://github.com/aldairlfp/SRI}{github.com/aldairlfp/SRI}
+      }
 		\end{cvsectionnormaltext}}
 
 	\vspace{-3mm}
@@ -183,9 +180,8 @@
 	{Python \vspace{-5mm}}
 	{}
 	{\begin{cvsectionnormaltext}
-			\item{LDAPSphere is a distributed directory service that provides a unified interface for managing user identities and access control across multiple platforms.
-			            It features a modular architecture, allowing for easy integration with existing systems and support for various authentication methods.
-			            \newline \faLink\ \href{https://github.com/aldairlfp/LDAPSphere}{https://github.com/aldairlfp/LDAPSphere}}
+			\item{Distributed directory service with modular auth integration. \faLink\ \href{https://github.com/aldairlfp/LDAPSphere}{github.com/aldairlfp/LDAPSphere}
+      }
 		\end{cvsectionnormaltext}}
 
 	\vspace{-5mm}
@@ -203,7 +199,7 @@
 	{}
 	{University of Havana \vspace{-5mm}}
 	{Havana, Cuba \vspace{-5mm}}
-	{09/2018 – 03/2025 \vspace{-5mm}}
+	{09/2018 – 02/2025 \vspace{-5mm}}
 	{\begin{cvsectionnormaltext}
 			\item{BSc in Computer Science (7.8/10)}
 		\end{cvsectionnormaltext}}
